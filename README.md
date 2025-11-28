@@ -12,7 +12,8 @@ while True:
     son1=input(m)
     amal1=input(y)
     if   amal1=='clear':
-         print('yechimi',end="")
+        
+         break
 
     elif amal=='+':
         qiymat3=int(son)+int(son1)
