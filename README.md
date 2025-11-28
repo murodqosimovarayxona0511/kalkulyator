@@ -27,5 +27,4 @@ while True:
     elif amal=='/':
         qiymat=int(son)/int(son1)
         print(qiymat)
-    else:
-        break
+    
