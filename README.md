@@ -11,7 +11,7 @@ while True:
     amal=input(a)
     son1=input(m)
     amal1=input(y)
-    if   amal1!='clear':
+    if   amal1=='clear':
          print('yechimi',end="")
 
     elif amal=='+':
