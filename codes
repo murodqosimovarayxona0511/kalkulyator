@@ -1,0 +1,452 @@
+ thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# thisdict["color"] ="white"
+# print(thisdict)
+#
+#
+# list=[1,234,5478]
+# print(list.pop(0))
+# print(list)
+# talaba={"Id":35268890,"kursi":1,"yonalishi":"matematika","guruhi":111,"ism familiya":'Murodqosimova Rayhona'}
+# print(talaba)
+# talaba["telefon nomer"]=886470902
+# talaba["manzil"]="jizzax"
+# print(talaba)
+#
+# x=talaba.keys()
+# print(x)
+# print(talaba.get("ism familiya","ism familiya mavjud emas"))
+# talaba.update({"ism familiya":"ruxshona","guruhi":112,"manzil":"zafarobod"})
+# print(talaba)
+#
+#
+# talaba.pop('kursi')
+# print(talaba)
+# talaba.popitem()
+# print(talaba)
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#
+# }
+# car.clear()
+# print(car)
+# mahsulot={
+#     "nomi": "daftar",
+#     "rangi":"qizil",
+#     "varogi":48
+# }
+# mahsulot.pop("varogi")
+# print(mahsulot)
+# del mahsulot["varogi"]
+# print(mahsulot)
+# print(mahsulot.update({"rangi":"oq"}))
+# print(mahsulot)
+# mahsulot.clear()
+# print(mahsulot)
+# for key  in mahsulot:
+#     print(mahsulot[key])
+# for key in mahsulot:
+#     print(key)
+# for key in mahsulot:
+#     print(key,":",mahsulot[key])
+# for i in mahsulot:
+#     print(i,':',mahsulot[i])
+# print(mahsulot.keys())
+# print(mahsulot.values())
+# car={
+#      "brand": "Ford",
+#      "model": "Mustang",
+#      "year": 1964
+#      }
+# car2={
+#      "brand": "chevralet",
+#      "model": "nexia3",
+#     "year": 2021
+# }
+# for x in car.keys():
+#     for y in car2.values():
+#         print(x,':',y)
+# print(type(car2))
+
+# car1=car.copy()
+# print(car1)
+# car.clear()
+# guruh111={
+#     "ism":"Rayhona",
+#     "familya":"Murodqosimova"
+# }
+# guruh112={
+#     "ism":"Shahzoda",
+#     "familya":"Artiqboyeva"
+# }
+# guruh113={
+#     "ism":"Laziza",
+#     "familiya":"Qosimova"
+# }
+# matematika={
+#     "guruh111":guruh111,
+#     "guruh112":guruh112,
+#     "guruh113":guruh113
+# }
+# print(matematika)
+# def kvadrat(x):
+#     print(x*x)
+# x=int(input('son'))
+# kvadrat(x)
+# def kvadrat_tenglama(a,b,c):
+#     if a!=0:
+#         d=b*b-4*a*c
+# #         if d>0:
+# def yigindi(n):
+#     s=0
+#     for i in range(1,n+1):
+#         s=s+i
+#     return s
+# n=int(input('n ni kiriting'))
+# yigindi(n)
+# print(yigindi(n))
+# def faktoryal(n):
+#     s=1
+#     for i in range(1,n+1):
+#         s=s*i
+#     print(s)
+# n=int(input('n ni kiriting'))
+# faktoryal(n)
+# def tenglama(x):
+#     y=3*x+5
+#     print(y)
+# x=int(input('son kiriting'))
+# tenglama(x)
+# def juft_son(n):
+#     s=0
+#     if n%2==0:
+#        for i in range(1,n+1) :
+#         s=s+i
+#         print(s)
+# n=int(input("enter the number"))
+# juft_son(n)
+# dasturchilar = {
+#     "ali": ["python", "c++"],
+#     "vali": ["html", "css", "js"],
+#     "hasan": ["php", "sql"],
+#     "husan": ["python", "php"],
+#     "maryam": ["c++", "c#"],
+# }
+#
+# for ism, tillar in dasturchilar.items():
+#     print(f"\n{ism.title()} quyidagi dasturlash tillarini biladi:")
+#     for til in tillar:
+#         print(til.upper())
+# dasturchilar={
+#     "rayhona":["html","python"],
+#     'shahzoda':["python","javascript"],
+#     "behruz":["python","c++"]
+# }
+# for key,value in dasturchilar.items():
+#     print(f"\n{key.title()} quyidagilarni biladi",end=" ")
+#     for valu in value:
+#         print(valu.upper(),end=" ")
+# # hamkasblar = {
+#     "ali": {
+#         "familiya": "valiyev",
+#         "tyil": 1995,
+#         "malumot": "oliy",
+#         "tillar": ["python", "c++"],
+#     },
+#     "vali": {
+#         "familiya": "aliyev",
+#         "tyil": 2001,
+#         "malumot": "o'rta-maxsus",
+#         "tillar": ["html", "css", "js"],
+#     },
+#     "hasan": {
+#         "familiya": "husanov",
+#         "tyil": 1999,
+#         "malumot": "maxsus",
+#         "tillar": ["python", "php"],
+#     },
+# }
+#
+# for ism, info in hamkasblar.items():
+#     print(
+#         f"\n{ism.title()} {info['familiya'].title()}, "
+#         f"{info['tyil']}-yilda tug'ilgan. "
+#         f"Ma'lumoti: {info['malumot']}. \n"
+#         "Quyidagi dasturlash tillarini biladi:"
+#     )
+#     for til in info["tillar"]:
+#         print(til.upper(), end=" ")
+# sonlar = {1, 2, 3}
+# ismlar = {"alijon", "valijon", "boqijon"}
+# mevalar = set()
+# sonlar = {1, 2, 3, 3, 4, 4, 5, 6}
+# print(sonlar)
+#
+# # Ro'yxatdan to'plamga o'tish
+# mevalar = ["olma", "anjir", "olma", "uzum", "olma", "uzum"]
+# mevalar = set(mevalar)
+# print(mevalar)
+
+# print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
+# savol = "Istalgan son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+# qiymat = ''
+# while qiymat != 'exit':
+#     qiymat = input(savol)
+#     if qiymat != 'exit':
+#         print(float(qiymat)**2)
+# print('Dastur tugadi')
+# parol="parol kiriting:"
+# parol+="(rayhona deb kiriting)"
+# print(parol)
+# qiymat=''
+# while qiymat!='rayhona':
+#     qiymat=input(parol)
+#     if qiymat!='rayhona':
+#         print("xato parol kiritdingiz")
+# print('sz muvofaqqiyatli kirdingiz')
+#
+# savol="yoshingizni kiriting"
+# yosh=True
+# while yosh:
+#     qiymat=input(savol)
+#     if qiymat<= '18':
+#         yosh=False
+#     else:
+#         print('szga kirish mumkin .Marhamat qilib joyingizni egallang')
+# print("szga kirish mumkin emas")
+# print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
+# savol = "Istalgan son kiriting "
+# savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+#
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'exit':
+#         break
+#     else:
+#         print(float(qiymat)**2)
+
+# print('Dastur tugadi!')
+
+# parol="parol kiriting"
+# qiymat=''
+# for n in range(1,11):
+#     qiymat=input(parol)
+#     if qiymat=='rayhona':
+#         print('parol togri')
+#         break
+#     else:
+#         print('parol xato. qayta kiriting')
+
+# parol='parol kiriting'
+# qiymat=''
+# while parol!='rayhona':
+#     qiymat=input(parol)
+#     if  qiymat=='rayhona':
+#         print('muvaffaqiyatli kirdingiz')
+#         break
+# son = 0
+# while son<10:
+#     son=son+1
+#     if son%2!=0:
+#         continue
+#     else:
+#         print(son)
+# son=int(input('sonni kiriting'))
+# s=0
+# while son>0:
+#     if son%10==2:
+#         son=son//10
+#         continue
+#     else:
+#         s=s+son%10
+#         son=son//10
+# print(s)
+# savol = "Yoshingizni kiriting: "
+#
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == "exit" or qiymat == "quit":
+#         break
+#     yosh = int(qiymat)
+#
+#     if yosh < 7:
+#         narh = 2000
+#     elif 7 <= yosh < 18:
+#         narh = 3000
+#     elif 18 <= yosh < 65:
+#         narh = 10000
+#     else:
+#         narh = 0
+#
+#     if narh == 0:
+#         print("Sizga chipta bepul")
+#     else:
+#         print(f"Chipta {narh} so'm")
+# print("Yaqin do'stlaringiz ro'yxatini tuzamiz.")
+# ismlar = []
+# n = 1  # ismlarni sanash uchun o'zgaruvchi
+# while True:
+#     savol = f"{n}-do'stingiz ismini kiriting:"
+#     ism = input(savol)
+#     ismlar.append(ism)
+#     takrorlash = input("Yana ism qo'shasizmi? (ha/yo'q)")
+#     n += 1
+#     if takrorlash != "ha":
+#         break
+#
+#
+# print("Do'stlaringiz ro'yxati:")
+# for ism in ismlar:
+#     print(ism.title())
+# mevalar = ["olma", "anjir", "olma", "uzum", "olma", "uzum"]
+# mevalar = set(mevalar)
+# print(mevalar)
+
+# sonlar = {1, 2, 3}
+# ismlar = {"alijon", "valijon", "boqijon"}
+# mevalar = set()
+# sonlar = {1, 2, 3, 3, 4, 4, 5, 6}
+# print(sonlar)
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+# set3 = {"John", "Elena"}
+# set4 = {"apple", "bananas", "cherry"}
+# myset = set1.union(set2, set3, set4)
+# print(myset)
+# input()
+# ism = input("Ismingiz nima? ")
+# savol = f"Salom, {ism.title()}. Yoshingiz nechida? "
+# yosh = input(savol)
+# yosh = int(yosh)
+# height = input("Bo'yingiz necha metr? ")
+# height = float(height)
+#
+# # while()
+# son = 1  # son ga 1 qiymatini beramiz
+# while son <= 5:  # toki son 5 dan kichik yoki teng ekan...
+#     print(son, end=" ")  # son ni konsolga chiqaramiz
+#     son = son + 1
+# son = 1
+# while son>0:
+#     son += 1
+#     if son%2!=0:
+#         continue
+#     else:
+#         print(son)
+# print('ikki son ustida 4ta arifmetik ammallar bajarish dasturi')
+# n="son kiriting:"
+# a="amal kiriting:"
+# m="ikkinchi son kiriting:"
+#
+# y="amal kiriting:"
+#
+# while True:
+#     son=input(n)
+#     amal=input(a)
+#     son1=input(m)
+#     amal1=input(y)
+#     if   amal1=='clear':
+#
+#          break
+#
+#     elif amal=='+':
+#         qiymat3=int(son)+int(son1)
+#         print(qiymat3)
+#     elif amal=='-':
+#         qiymat2=int(son)-int(son1)
+#         print(qiymat2)
+#     elif amal=='*':
+#         qiymat1=int(son)*int(son1)
+#         print(qiymat1)
+#     elif amal=='/':
+#         qiymat=int(son)/int(son1)
+#         print(qiymat)
+#     else:
+#         break
+
+
+# thisset = {"apple", "banana", "cherry"}
+#
+# print("banana" in thisset)
+# thisset = {"apple", "banana", "cherry"}
+# tropical = {"pineapple", "mango", "papaya"}
+#
+# thisset.update(tropical)
+#
+# print(thisset)
+# thisset = {"apple", "banana", "cherry"}
+# mylist = ["kiwi", "orange"]
+#
+# thisset.update(mylist)
+#
+# print(thisset)
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+#
+# set3 = set1.union(set2)
+# print(set3)
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+#
+# set3 = set1 | set2
+# print(set3)
+# a = {"apple", "banana", "cherry"}
+# b = {"google", "microsoft", "apple"}
+#
+# myset = a - b
+#
+# print(myset)
+
+# ovqatlar=[]
+# n=1
+# while True:
+#     taom=f"{n}-taom kiriting"
+#     taom = input(taom)
+#     ovqatlar.append(taom)
+#     n=n+1
+#     takrorlash=input("yana qandaydir taom xohlayszmi(ha yoki yoq):")
+#
+#
+#     if takrorlash=='yoq':
+#         break
+# print('szning buyurtmalar  royxatingiz',ovqatlar)
+# qaytarish=input("buyurmatini qaytarmoqchimisz(ha yoki yoq):")
+#
+#
+# if qaytarish=="ha":
+#     print("nechanchi buyurtmani bekor qilmoqchisz")
+#     n=input('n=')
+#     ovqatlar.pop(n)
+#     print(ovqatlar)
+
+
+# ovqatlar={}
+# while True:
+#     ovqat=input('taom turini kiriting')
+#     narx=input('narxni kiriting')
+#     ovqatlar[ovqat]=int(narx)
+#     savol=input("yana taom kiritaszmi(ha yoki yoq) ")
+#     if savol=='yoq':
+#         break
+# for ovqat,narx in ovqatlar.items():
+#     print(f"{ovqat.title()}:{narx}")
+
+# lists=["rayhona","behruz","shaxzoda",'humoyun','asad','nurbek','raxmatullo']
+# list="rayhona"
+# while list in lists:
+#     lists.remove(list)
+# print(lists)
+# baholanganlar={}
+# while lists:
+#     talaba=lists.pop()
+#     baho=input(f"{talaba}ning bahosini kiriting=")
+#     print(f"{talaba.upper()} baholandi")
+#     baholanganlar[talaba]=int(baho)
+# for talaba,baho in baholanganlar.items():
+#   print(talaba.upper(),':',baho)
